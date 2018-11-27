@@ -15,7 +15,7 @@ public class ArrayListGithubPractice{
 
 		System.out.println(list1);
 		System.out.println(list2);
-		System.out.println(combineList(list1,list2));
+		printList(combineList(list1,list2));
 
 	}
 
@@ -24,6 +24,13 @@ public class ArrayListGithubPractice{
 			list1.add(list2.get(i));
 			}
 		return list1;
+		}
+
+	public static void printList(ArrayList list){
+		for(int i=0;i<list.size();i++){
+			System.out.print(list.get(i)+", ");
+			}
+			System.out.println();
 		}
 
 }
